@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.mainLayout .ant-layout-header {
+  background: #f7a0a9;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+}
+
+.ant-layout-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.header .logo {
+  font-family: 'Nunito';
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header .logo svg {
+  width: 20px;
+  height: 40px;
+  margin-bottom: -12px;
+}
+
+.header .logo a {
+  color: #fff;
+}
+
+.header .ant-menu {
+  border: 0;
+  background: none !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header .ant-menu li.ant-menu-item {
+  position: relative;
+  color: #333;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item, .ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu {
+  padding: 0 15px;
+}
+
+.header .ant-menu li.ant-menu-item:before,
+.header .ant-menu li.ant-menu-item:after {
+  content: '';
+  background: #fff;
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 30%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.header .ant-menu li.ant-menu-item:after {
+  left: auto;
+  right: 30%;
+}
+
+.header .ant-menu li.ant-menu-item,
+.header .ant-menu li.ant-menu-item-selected {
+  border: 0 !important;
+}
+
+.header .ant-menu li.ant-menu-item-selected,
+.header .ant-menu li.ant-menu-item:hover {
+  color: #fff;
+  background: none;
+}
+
+.header .ant-menu li.ant-menu-item-selected:before,
+.header .ant-menu li.ant-menu-item:hover:before {
+  left: 5%;
+  opacity: 1;
+}
+
+.header .ant-menu li.ant-menu-item-selected:after,
+.header .ant-menu li.ant-menu-item:hover:after {
+  right: 5%;
+  opacity: 1;
+}
+
+.header .ant-menu li.ant-menu-item-selected.btn:before,
+.header .ant-menu li.ant-menu-item.btn:hover:before {
+  left: 0%;
+  opacity: 0;
+}
+
+.header .ant-menu li.ant-menu-item-selected.btn:after,
+.header .ant-menu li.ant-menu-item.btn:hover:after {
+  right: 0%;
+  opacity: 0;
+}
+
+.log a.log-in{
+  margin-right:10px;
+}
+
+.ant-btn{
+  width: auto;
+  font-weight:650;
+  color: #f7a0a9;
+  font-size: 15px;
+}
+
+.ant-btn:hover {
+  color: #fff !important;
+  background-color: #f7a0a9;
+  border-color: #fff !important;
+}
+
+.ant-btn:focus{
+  color: #f7a0a9;
+  border-color: #afafaf;
+}
