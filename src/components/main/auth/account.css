@@ -1,0 +1,191 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #ffffff;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.contain {
+  width: 100%;
+  height: 100vh;
+  padding: auto 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 900px;
+  margin: auto 100px;
+  background: #fff;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3),
+    10px 10px 15px rgba(70, 70, 70, 0.15),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.3),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+}
+
+.cont .form {
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1.2s ease-in-out;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  padding: 50px 30px 0;
+}
+
+
+
+.cont button {
+  display: block;
+  margin: 0 auto;
+  width: 490px;
+  height: 37px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.cont h2 {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  width: 490px;
+  margin: 25px auto 0;
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.cont label span {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+
+.cont input {
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+
+.cont .pass{
+  /* white-space: nowrap; */
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.cont .register-pass {
+  margin-top: 15px;
+  padding-right: 7%;
+  text-align: center;
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.cont .register-pass:hover{
+    color:#40a9ff;
+}
+
+.cont .forgot-pass {
+  margin-top: 15px;
+  margin-left: 21%;
+  text-align: center;
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.cont .forgot-pass:hover{
+    color: #40a9ff;
+}
+
+.cont .submit {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background: #f7a0a9;
+  text-transform: uppercase;
+}
+.cont .submit:hover{
+      border: 1px solid #fff;
+    background-color: #ffbdc2;
+    color: #fff;
+}
+
+.cont .back{
+   padding-right: 85%;
+}
+.back .submit{
+    width: 85px;
+       border: 1px solid #f7a0a9;
+    background-color: #fff;
+    color: #f7a0a9;
+}
+
+.back-forgot{
+    padding-top: 15%;
+    padding-right: 85%;
+}
+.back-forgot .submit{
+    width: 85px;
+    border: 1px solid #f7a0a9;
+    background-color: #fff;
+    color: #f7a0a9;
+}
+
+
+.abc {
+  display: flex;
+  justify-content: center;
+  margin: 40px 155px;
+}
+
+.fb-btn {
+  border: 2px solid #d3dae9;
+  color: #8fa1c7;
+  width: 218px;
+}
+
+.fb-btn span {
+  font-weight: bold;
+  color: #455a81;
+}
+
+.fb-btn img.google {
+  width: 60px;
+}
+/* 
+.sign-in {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+} */

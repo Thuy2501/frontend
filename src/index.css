@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ----------------- Header ------------------- */
+/* @import url("./components/header/Header.css"); */
+
+/* ----------------- Account ------------------- */
+/* @import url("./components/main/auth/account.css"); */

@@ -26,6 +26,60 @@
   padding: 13px 0;
 }
 
+.header .logo-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .account-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .account-search a {
+  color: #fff;
+}
+
+.search__input {
+  width: 62%;
+  height: 30px;
+  padding: 12px 24px;
+  margin: auto 5px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  /*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+  background-image: url("https://res.cloudinary.com/dint5xlbc/image/upload/v1623239641/avatar/search-16_l9top4.png");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+  color: color(#575756 a(0.8));
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+  /* padding: 12px 0; */
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
 .header .logo {
   font-family: 'Nunito';
   font-size: 22px;
@@ -42,6 +96,10 @@
   color: #fff;
 }
 
+.header .ant-dropdown-trigger {
+  margin: 14px auto;
+}
+
 .header .ant-menu {
   border: 0;
   background: none !important;
@@ -54,7 +112,8 @@
   color: #333;
 }
 
-.ant-menu-dark.ant-menu-horizontal > .ant-menu-item, .ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu {
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu {
   padding: 0 15px;
 }
 
@@ -111,24 +170,51 @@
   opacity: 0;
 }
 
-.log a.log-in{
-  margin-right:10px;
+.header .log a.log-in {
+  margin-right: 10px;
 }
 
-.ant-btn{
+.header .ant-btn {
   width: auto;
-  font-weight:650;
+  font-weight: 650;
   color: #f7a0a9;
   font-size: 15px;
 }
 
-.ant-btn:hover {
+.header .ant-btn:hover {
   color: #fff !important;
   background-color: #f7a0a9;
   border-color: #fff !important;
 }
 
-.ant-btn:focus{
+.header .ant-btn:focus {
   color: #f7a0a9;
   border-color: #afafaf;
 }
+.header .log a {
+  color: #fff;
+}
+
+.header img.account__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+
+.header .anticon svg {
+  width: 0.7em;
+  height: 0.7em;
+  color: #fff;
+}
+
+.header .ant-dropdown-menu {
+  border-radius: 6px;
+}
+
+.ant-dropdown-menu-item > a,
+.ant-dropdown-menu-submenu-title > a {
+  color: #f7a0a9;
+}
+
+/* ------------------------------Seach-------------------------------------- */
